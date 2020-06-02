@@ -60,3 +60,17 @@ D:\Tedu\TeduShop\TeduShop.Web\obj\Debug\TeduShop.Web.csproj.CoreCompileInputs.ca
 D:\Tedu\TeduShop\TeduShop.Web\obj\Debug\TeduShop.Web.csproj.CopyComplete
 D:\Tedu\TeduShop\TeduShop.Web\obj\Debug\TeduShop.Web.dll
 D:\Tedu\TeduShop\TeduShop.Web\obj\Debug\TeduShop.Web.pdb
+D:\Tedu\TeduShop\TeduShop.Web\bin\EntityFramework.dll
+D:\Tedu\TeduShop\TeduShop.Web\bin\EntityFramework.SqlServer.dll
+D:\Tedu\TeduShop\TeduShop.Web\bin\TeduShop.Connection.dll
+D:\Tedu\TeduShop\TeduShop.Web\bin\TeduShop.Data.dll
+D:\Tedu\TeduShop\TeduShop.Web\bin\TeduShop.Model.dll
+D:\Tedu\TeduShop\TeduShop.Web\bin\TeduShop.Service.dll
+D:\Tedu\TeduShop\TeduShop.Web\bin\TeduShop.Connection.pdb
+D:\Tedu\TeduShop\TeduShop.Web\bin\TeduShop.Data.pdb
+D:\Tedu\TeduShop\TeduShop.Web\bin\TeduShop.Data.dll.config
+D:\Tedu\TeduShop\TeduShop.Web\bin\TeduShop.Model.pdb
+D:\Tedu\TeduShop\TeduShop.Web\bin\TeduShop.Model.dll.config
+D:\Tedu\TeduShop\TeduShop.Web\bin\TeduShop.Service.pdb
+D:\Tedu\TeduShop\TeduShop.Web\bin\EntityFramework.xml
+D:\Tedu\TeduShop\TeduShop.Web\bin\EntityFramework.SqlServer.xml
