@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TeduShop.Data
+namespace TeduShop.Data.Infrastucture
 {
-    public class Class1
+    public interface IUnitOfWork
     {
+        void Commit();
     }
 }

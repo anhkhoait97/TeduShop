@@ -13,3 +13,5 @@ D:\Tedu\TeduShop\TeduShop.Service\obj\Debug\TeduShop.Service.csproj.CoreCompileI
 D:\Tedu\TeduShop\TeduShop.Service\obj\Debug\TeduShop.Service.csproj.CopyComplete
 D:\Tedu\TeduShop\TeduShop.Service\obj\Debug\TeduShop.Service.dll
 D:\Tedu\TeduShop\TeduShop.Service\obj\Debug\TeduShop.Service.pdb
+D:\Tedu\TeduShop\TeduShop.Service\bin\Debug\EntityFramework.dll
+D:\Tedu\TeduShop\TeduShop.Service\bin\Debug\EntityFramework.xml

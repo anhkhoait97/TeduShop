@@ -12,3 +12,8 @@ D:\Tedu\TeduShop\TeduShop.Data\obj\Debug\TeduShop.Data.csproj.CoreCompileInputs.
 D:\Tedu\TeduShop\TeduShop.Data\obj\Debug\TeduShop.Data.csproj.CopyComplete
 D:\Tedu\TeduShop\TeduShop.Data\obj\Debug\TeduShop.Data.dll
 D:\Tedu\TeduShop\TeduShop.Data\obj\Debug\TeduShop.Data.pdb
+D:\Tedu\TeduShop\TeduShop.Data\bin\Debug\TeduShop.Model.dll
+D:\Tedu\TeduShop\TeduShop.Data\bin\Debug\TeduShop.Model.pdb
+D:\Tedu\TeduShop\TeduShop.Data\bin\Debug\TeduShop.Model.dll.config
+D:\Tedu\TeduShop\TeduShop.Data\obj\Debug\TeduShop.Data.Migrations.InitialDb.resources
+D:\Tedu\TeduShop\TeduShop.Data\obj\Debug\TeduShop.Data.csproj.GenerateResource.cache
