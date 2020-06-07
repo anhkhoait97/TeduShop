@@ -33,9 +33,9 @@ namespace TeduShop.Data.Infrastucture
         }
 
         #region Implementation
-        public virtual void Add(T entity)
+        public virtual T Add(T entity)
         {
-            dbSet.Add(entity);
+            return dbSet.Add(entity);
         }
 
         public virtual void Update(T entity)
@@ -48,7 +48,11 @@ namespace TeduShop.Data.Infrastucture
         {
             dbSet.Remove(entity);
         }
-
+        public virtual void Delete(int id)
+        {
+            var item = dbSet.Find(id);
+            dbSet.Remove(item);
+        }
         public virtual void DeleteMulti(Expression<Func<T, bool>> where)
         {
             IEnumerable<T> objects = dbSet.Where<T>(where).AsEnumerable();
