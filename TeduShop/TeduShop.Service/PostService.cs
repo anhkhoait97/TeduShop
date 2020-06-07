@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using TeduShop.Data.Infrastucture;
 using TeduShop.Data.Repositories;
 using TeduShop.Model.Models;
@@ -8,7 +7,7 @@ namespace TeduShop.Service
 {
     public interface IPostService
     {
-        Post Add(Post post);
+        void Add(Post post);
 
         void Update(Post post);
 
@@ -18,11 +17,13 @@ namespace TeduShop.Service
 
         IEnumerable<Post> GetAllPaging(int page, int pageSize, out int totalRow);
 
+        IEnumerable<Post> GetAllByCategoryPaging(int categoryId, int page, int pageSize, out int totalRow);
+
         Post GetById(int id);
 
         IEnumerable<Post> GetAllByTagPaging(string tag, int page, int pageSize, out int totalRow);
 
-        void SaveChange();
+        void SaveChanges();
     }
 
     public class PostService : IPostService
@@ -36,9 +37,9 @@ namespace TeduShop.Service
             this._unitOfWork = unitOfWork;
         }
 
-        public Post Add(Post post)
+        public void Add(Post post)
         {
-            return _postRepository.Add(post);
+            _postRepository.Add(post);
         }
 
         public void Delete(int id)
@@ -51,9 +52,15 @@ namespace TeduShop.Service
             return _postRepository.GetAll(new string[] { "PostCategory" });
         }
 
+        public IEnumerable<Post> GetAllByCategoryPaging(int categoryId, int page, int pageSize, out int totalRow)
+        {
+            return _postRepository.GetMultiPaging(x => x.Status && x.CategoryID == categoryId, out totalRow, page, pageSize, new string[] { "PostCategory" });
+        }
+
         public IEnumerable<Post> GetAllByTagPaging(string tag, int page, int pageSize, out int totalRow)
         {
-            return _postRepository.GetMultiPaging(x => x.Status, out totalRow, page, pageSize);
+            //TODO: Select all post by tag
+            return _postRepository.GetAllByTag(tag, page, pageSize, out totalRow);
         }
 
         public IEnumerable<Post> GetAllPaging(int page, int pageSize, out int totalRow)
@@ -66,7 +73,7 @@ namespace TeduShop.Service
             return _postRepository.GetSingleById(id);
         }
 
-        public void SaveChange()
+        public void SaveChanges()
         {
             _unitOfWork.Commit();
         }
